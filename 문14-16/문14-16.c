@@ -7,13 +7,12 @@ int main(void)
 {
 	printf("===문제14===\n");
 	// 문제 14
-	int a, b, sum;						   // 정수변수 a, b, sum 선언
-	printf("정수를 입력하시오 : "); // 사용자 안내 메시지 출력
-	scanf_s("%d", &a);  // 첫 번째 정수 a 입력받기
-	printf("정수를 입력하시오 : "); // 사용자 안내 메시지 출력
-	scanf_s("%d", &b);  // 두 번째 정수 b 입력받기
-	sum = a + b;  // 합계 sum 계산
-	printf("합계는 %d입니다. \n", sum);  // 합계 출력
+	int a, b;
+	printf("정수를 입력하시오 : ");
+	scanf_s("%d", &a);  
+	printf("정수를 입력하시오 : ");
+	scanf_s("%d", &b);
+	printf("합계는 %d입니다. \n", a+b);
 
 	printf("\n===문제15===\n");
 	// 문제 15
@@ -24,7 +23,7 @@ int main(void)
 	// 문제 16 
 	int dan = 7, t = 1;
 	printf("===7단===\n");
-	while (t < 9) {
+	while (t <= 9) {
 		printf("%d x %d = %2d\n", dan, t, dan * t);
 		t++;
 	}
